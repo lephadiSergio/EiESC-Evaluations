@@ -20,68 +20,83 @@ font-style:italic;
 color:#cfe3ff;
 }
 
+/* IMAGE BANNER */
+
 .banner{
 display:flex;
 justify-content:center;
-gap:30px;
-margin-top:20px;
+gap:25px;
+margin-top:10px;
 flex-wrap:wrap;
 }
 
+/* SMALLER IMAGES */
+
 .banner-img{
-width:260px;
+width:160px;
 border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.35);
+box-shadow:0 8px 20px rgba(0,0,0,0.35);
 transition:transform 0.4s;
 }
 
 .banner-img:hover{
-transform:scale(1.05);
+transform:scale(1.1);
 }
+
+/* YEAR BUTTON AREA */
 
 .year-buttons{
 margin-top:40px;
 }
 
+/* LARGER BUTTONS */
+
 button{
-padding:15px 35px;
-margin:10px;
-font-size:18px;
+padding:20px 45px;
+margin:15px;
+font-size:22px;
+font-weight:bold;
 border:none;
-border-radius:10px;
+border-radius:12px;
 cursor:pointer;
 background:white;
 color:#0b1f3a;
-box-shadow:0 6px 15px rgba(0,0,0,0.3);
+box-shadow:0 8px 20px rgba(0,0,0,0.35);
 transition:all 0.25s ease;
 }
 
+/* BUTTON HOVER ANIMATION */
+
 button:hover{
-transform:scale(1.08);
+transform:scale(1.12);
 background:#4aa3ff;
 color:white;
-box-shadow:0 10px 30px rgba(0,0,0,0.4);
+box-shadow:0 12px 35px rgba(0,0,0,0.45);
 }
 
-.module-container{
-margin-top:40px;
-}
+/* MODULE BUTTONS */
 
 .module{
 display:block;
-margin:15px auto;
-width:360px;
+margin:20px auto;
+width:420px;
 }
+
+/* BACK BUTTON */
 
 .back-btn{
 margin-top:40px;
 }
+
+/* FOOTER */
 
 footer{
 margin-top:60px;
 padding:20px;
 color:#dbe8ff;
 }
+
+/* PAGE FADE ANIMATION */
 
 @keyframes fadeIn{
 from{
