@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -14,30 +15,45 @@
 <header>
 
 <h1>⚡ EIE Module Portal ⚡</h1>
+
 <p>Select your year of study</p>
 
-<p class="joke">
-"If it works → don't touch it. If it doesn't → it's probably Software."
+<p class="joke" id="jokeText">
+Electrical engineers do it with resistance.
 </p>
 
 </header>
 
-<div class="year-buttons">
+<div class="banner">
 
-<button onclick="showModules('y2')">🔧 2nd Year</button>
-<button onclick="showModules('y3')">⚡ 3rd Year</button>
-<button onclick="showModules('y4')">🚀 4th Year</button>
+<img src="images/1.jpeg" class="banner-img">
+
+<img src="images/2.jpeg" class="banner-img">
 
 </div>
 
-<div id="y2" class="module-section">
-<h2>Second Year Modules</h2>
+<div class="year-buttons">
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSd9TTY-P5nLmyEFSgqJUWNwaqlY5jS-F7UOSttQKslNonwyYw/viewform">
-<button class="module">ELEN2017A Electric Circuits</button>
+<a href="year2.html">
+<button class="year-btn">🔧 2nd Year</button>
+</a>
+
+<a href="year3.html">
+<button class="year-btn">⚡ 3rd Year</button>
+</a>
+
+<a href="year4.html">
+<button class="year-btn">🚀 4th Year</button>
 </a>
 
 </div>
+
+<footer>
+
+<p>⚡ Built by EIE students</p>
+<p>If it works → don't touch it.</p>
+
+</footer>
 
 <script src="js/script.js"></script>
 
