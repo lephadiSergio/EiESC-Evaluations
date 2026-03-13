@@ -4,7 +4,13 @@ font-family:Arial;
 background:linear-gradient(180deg,#0b1f3a,#1e5db3,#ffffff);
 color:white;
 text-align:center;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
+
+/* HEADER */
 
 header{
 padding:40px;
@@ -25,15 +31,13 @@ color:#cfe3ff;
 .banner{
 display:flex;
 justify-content:center;
-gap:25px;
+gap:20px;
 margin-top:10px;
 flex-wrap:wrap;
 }
 
-/* SMALLER IMAGES */
-
 .banner-img{
-width:160px;
+width:150px;
 border-radius:12px;
 box-shadow:0 8px 20px rgba(0,0,0,0.35);
 transition:transform 0.4s;
@@ -43,13 +47,13 @@ transition:transform 0.4s;
 transform:scale(1.1);
 }
 
-/* YEAR BUTTON AREA */
+/* YEAR BUTTONS */
 
 .year-buttons{
-margin-top:40px;
+margin-top:30px;
 }
 
-/* LARGER BUTTONS */
+/* GENERAL BUTTON STYLE */
 
 button{
 padding:20px 45px;
@@ -65,7 +69,7 @@ box-shadow:0 8px 20px rgba(0,0,0,0.35);
 transition:all 0.25s ease;
 }
 
-/* BUTTON HOVER ANIMATION */
+/* BUTTON ANIMATION */
 
 button:hover{
 transform:scale(1.12);
@@ -74,12 +78,28 @@ color:white;
 box-shadow:0 12px 35px rgba(0,0,0,0.45);
 }
 
+/* MODULE AREA */
+
+.module-container{
+margin-top:50px;
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:15px;
+backdrop-filter:blur(6px);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
 /* MODULE BUTTONS */
 
 .module{
 display:block;
-margin:20px auto;
+margin:18px auto;
 width:420px;
+max-width:90%;
 }
 
 /* BACK BUTTON */
@@ -91,12 +111,12 @@ margin-top:40px;
 /* FOOTER */
 
 footer{
-margin-top:60px;
+margin-top:auto;
 padding:20px;
 color:#dbe8ff;
 }
 
-/* PAGE FADE ANIMATION */
+/* FADE ANIMATION */
 
 @keyframes fadeIn{
 from{
