@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Module Forms</title>
-<style>
-body{
-font-family: Arial;
-text-align:center;
-background:#f4f4f4;
-}
 
-.container{
-margin-top:100px;
-}
+<title>EIE Module Portal</title>
 
-button{
-padding:20px 40px;
-margin:20px;
-font-size:20px;
-border:none;
-border-radius:10px;
-background:#007BFF;
-color:white;
-cursor:pointer;
-}
+<link rel="stylesheet" href="css/styles.css">
 
-button:hover{
-background:#0056b3;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
-<h1>What Year of Study Are You?</h1>
+<header>
 
-<a href="year2.html">
-<button>2nd Year</button>
-</a>
+<h1>⚡ EIE Module Portal ⚡</h1>
+<p>Select your year of study</p>
 
-<a href="year3.html">
-<button>3rd Year</button>
-</a>
+<p class="joke">
+"If it works → don't touch it. If it doesn't → it's probably Software."
+</p>
 
-<a href="year4.html">
-<button>4th Year</button>
+</header>
+
+<div class="year-buttons">
+
+<button onclick="showModules('y2')">🔧 2nd Year</button>
+<button onclick="showModules('y3')">⚡ 3rd Year</button>
+<button onclick="showModules('y4')">🚀 4th Year</button>
+
+</div>
+
+<div id="y2" class="module-section">
+<h2>Second Year Modules</h2>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd9TTY-P5nLmyEFSgqJUWNwaqlY5jS-F7UOSttQKslNonwyYw/viewform">
+<button class="module">ELEN2017A Electric Circuits</button>
 </a>
 
 </div>
 
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
