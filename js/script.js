@@ -1,22 +1,9 @@
-const jokes = [
+function showModules(year){
 
-"Electrical engineers do it with resistance.",
+document.getElementById("y2").style.display="none";
+document.getElementById("y3").style.display="none";
+document.getElementById("y4").style.display="none";
 
-"If voltage is present and nothing works → check the ground.",
+document.getElementById(year).style.display="block";
 
-"Without EE's the world would be dark.",
-
-"It's not a bug, it's a feature.",
-
-"Trust me, I'm an engineer.",
-
-"99% of engineering is turning it off and on again."
-
-];
-
-const jokeText = document.getElementById("jokeText");
-
-if(jokeText){
-const randomJoke = jokes[Math.floor(Math.random()*jokes.length)];
-jokeText.textContent = randomJoke;
 }
