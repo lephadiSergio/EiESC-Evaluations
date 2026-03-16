@@ -4,7 +4,7 @@
 
 <head>
 
-<title>EIE Module Portal</title>
+<title>EIE Student Portal</title>
 
 <link rel="stylesheet" href="css/styles.css">
 
@@ -14,46 +14,89 @@
 
 <header>
 
-<h1>⚡ EIE Module Portal ⚡</h1>
-
-<p>Select your year of study</p>
-
-<p class="joke" id="jokeText">
-Electrical engineers do it with resistance.
-</p>
+<h1>ELECTRICAL ENGINEERING PATHWAYS</h1>
 
 </header>
 
-<div class="banner">
+<div class="yos-container">
 
-<img src="images/1.jpeg" class="banner-img">
+<div class="yos-button" onclick="showModules('y2')">
+YEAR OF STUDY 2 (YOS 2)
+</div>
 
-<img src="images/2.jpeg" class="banner-img">
+<div class="yos-button" onclick="showModules('y3')">
+YEAR OF STUDY 3 (YOS 3)
+</div>
+
+<div class="yos-button" onclick="showModules('y4')">
+YEAR OF STUDY 4 (YOS 4)
+</div>
 
 </div>
 
-<div class="year-buttons">
+<!-- YEAR 2 -->
 
-<a href="year2.html">
-<button class="year-btn">🔧 2nd Year</button>
+<div id="y2" class="modules">
+
+<h2>Year of Study 2</h2>
+
+<a href="https://forms.gle/3A7wqz6qri8Ly1CR6">
+<button>YOS 2 MICROS</button>
 </a>
 
-<a href="year3.html">
-<button class="year-btn">⚡ 3rd Year</button>
+<a href="https://forms.gle/cWWCgX5xnrsC2MuW6">
+<button>YOS 2 SD1</button>
 </a>
 
-<a href="year4.html">
-<button class="year-btn">🚀 4th Year</button>
+<a href="https://forms.gle/QASME1L9sCNGC5Ug9">
+<button>ELEN2017 Electric Circuits</button>
 </a>
 
 </div>
 
-<footer>
+<!-- YEAR 3 -->
 
-<p>⚡ Built by EIE students</p>
-<p>If it works → don't touch it.</p>
+<div id="y3" class="modules">
 
-</footer>
+<h2>Year of Study 3</h2>
+
+<a href="https://forms.gle/uY8NuJKKpAerViQy8">
+<button>YOS 3 POWER</button>
+</a>
+
+<a href="https://forms.gle/acTwxRhw2X8wnvBV6">
+<button>YOS 3 IE DATA AND INFO</button>
+</a>
+
+<a href="https://forms.gle/F64D47vmopTkyXSZA">
+<button>Signals and Systems 2A</button>
+</a>
+
+<a href="https://forms.gle/2yuYArzS4BxhYRMv7">
+<button>Electronics 2</button>
+</a>
+
+</div>
+
+<!-- YEAR 4 -->
+
+<div id="y4" class="modules">
+
+<h2>Year of Study 4</h2>
+
+<a href="https://forms.gle/uSBR2DEahGeEpsMA9">
+<button>SOCIOLOGY</button>
+</a>
+
+<a href="https://forms.gle/yg5HxURKFMHMjpHPA">
+<button>MEASUREMENTS</button>
+</a>
+
+<a href="https://forms.gle/5TSBvgE8bjx8rQWx5">
+<button>ELECTIVES</button>
+</a>
+
+</div>
 
 <script src="js/script.js"></script>
 
