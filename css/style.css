@@ -1,130 +1,132 @@
 body{
+
 margin:0;
 font-family:Arial;
-background:linear-gradient(180deg,#0b1f3a,#1e5db3,#ffffff);
+
+background:#081421;
 color:white;
+
 text-align:center;
-min-height:100vh;
+
 display:flex;
 flex-direction:column;
 align-items:center;
+
+min-height:100vh;
+
 }
 
-/* HEADER */
-
 header{
-padding:40px;
-animation:fadeIn 1.2s ease;
+
+margin-top:40px;
+margin-bottom:40px;
+
+letter-spacing:2px;
+
 }
 
 h1{
-font-size:42px;
-}
 
-.joke{
-font-style:italic;
-color:#cfe3ff;
-}
+font-size:32px;
+color:#cde8ff;
 
-/* IMAGE BANNER */
-
-.banner{
-display:flex;
-justify-content:center;
-gap:20px;
-margin-top:10px;
-flex-wrap:wrap;
-}
-
-.banner-img{
-width:150px;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.35);
-transition:transform 0.4s;
-}
-
-.banner-img:hover{
-transform:scale(1.1);
 }
 
 /* YEAR BUTTONS */
 
-.year-buttons{
-margin-top:30px;
+.yos-container{
+
+display:flex;
+flex-direction:column;
+gap:35px;
+
 }
 
-/* GENERAL BUTTON STYLE */
+.yos-button{
 
-button{
-padding:20px 45px;
-margin:15px;
+width:420px;
+padding:25px;
+
 font-size:22px;
 font-weight:bold;
-border:none;
+
 border-radius:12px;
+
+background:#0e2236;
+
+border:2px solid #4db8ff;
+
+color:#cde8ff;
+
 cursor:pointer;
-background:white;
-color:#0b1f3a;
-box-shadow:0 8px 20px rgba(0,0,0,0.35);
-transition:all 0.25s ease;
+
+transition:0.3s;
+
+box-shadow:0 0 10px #4db8ff;
+
 }
 
-/* BUTTON ANIMATION */
+.yos-button:hover{
 
-button:hover{
-transform:scale(1.12);
-background:#4aa3ff;
-color:white;
-box-shadow:0 12px 35px rgba(0,0,0,0.45);
+transform:scale(1.05);
+
+box-shadow:
+0 0 10px #4db8ff,
+0 0 25px #4db8ff,
+0 0 40px #4db8ff;
+
 }
 
 /* MODULE AREA */
 
-.module-container{
-margin-top:50px;
-background:rgba(255,255,255,0.1);
-padding:40px;
-border-radius:15px;
-backdrop-filter:blur(6px);
-box-shadow:0 10px 30px rgba(0,0,0,0.4);
+.modules{
 
-display:flex;
-flex-direction:column;
-align-items:center;
+display:none;
+
+margin-top:60px;
+
+background:#0e2236;
+
+padding:40px;
+
+border-radius:15px;
+
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+
 }
 
 /* MODULE BUTTONS */
 
-.module{
+.modules button{
+
 display:block;
-margin:18px auto;
-width:420px;
-max-width:90%;
+
+margin:15px auto;
+
+padding:18px 40px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:10px;
+
+background:#4db8ff;
+
+color:#081421;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.25s;
+
 }
 
-/* BACK BUTTON */
+.modules button:hover{
 
-.back-btn{
-margin-top:40px;
-}
+transform:scale(1.08);
 
-/* FOOTER */
+background:#7fd3ff;
 
-footer{
-margin-top:auto;
-padding:20px;
-color:#dbe8ff;
-}
-
-/* FADE ANIMATION */
-
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(-20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
 }
